@@ -1,0 +1,24 @@
+﻿<Window x:Class="ICE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ICE"
+        mc:Ignorable="d"
+        Title="Justice" Height="350" Width="525" ResizeMode="NoResize">
+    <Grid Margin="0,0,-6,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="313*"/>
+            <ColumnDefinition Width="169*"/>
+            <ColumnDefinition Width="43*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="245" Margin="10,44,0,0" VerticalAlignment="Top" Width="497" SelectionChanged="listBox_SelectionChanged" Grid.ColumnSpan="3"/>
+        <Button x:Name="button" Content="Listen" HorizontalAlignment="Left" Margin="134,13,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.598,-0.494" Height="23" Click="button_Click"/>
+        <Label x:Name="label" Content="Port " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxa" HorizontalAlignment="Left" Height="23" Margin="50,13,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="79" TextChanged="textBox_TextChanged"/>
+        <Label x:Name="label1" Content="Certificate" HorizontalAlignment="Left" Margin="227,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxa_Copy" HorizontalAlignment="Left" Height="23" Margin="296,13,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="131" TextChanged="textBox_TextChanged" Grid.ColumnSpan="2"/>
+        <Button x:Name="button_Copy" Content="Browse" HorizontalAlignment="Left" Margin="118.69,13,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.598,-0.494" Height="23" Grid.ColumnSpan="2" Click="button_Copy_Click" Grid.Column="1"/>
+
+    </Grid>
+</Window>
